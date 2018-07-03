@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./src/jquery.min.js"></script>
+    <script src="./src/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <ul id="student-list">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </ul> -->
+    <section>
+        <div class="container">
+            <!-- Button trigger modal -->
+            <button id="login" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Google Login</button>
+            <img id="user-photo" class="circle" width="30">
+            <span id="username" class=""></span>
+            <button id="logout" type="button" class="btn btn-primary hidden" data-toggle="modal" data-target="#exampleModal">
+                logout </button>
+            <div class="row" id="products">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>品名</th>
+                            <th>單價</th>
+                            <th>個數</th>
+                            <th>小計</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-content">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right">總計 : </td>
+                            <td id="total">0元</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button id="checkout" class="btn btn-primary hidden">結帳</button>
+                <button id="remove-all" class="btn btn-primary">清除全部</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAbGfUe6RZUiCo8cdEXo-Nrk4vAmfH02rU",
+            authDomain: "edgaryang93307.firebaseapp.com",
+            databaseURL: "https://edgaryang93307.firebaseio.com",
+            projectId: "edgaryang93307",
+            storageBucket: "edgaryang93307.appspot.com",
+            messagingSenderId: "235965308694"
+        };
+        firebase.initializeApp(config);
+
+        db = firebase.firestore();
+    </script>
+    <script src="./src/app3.js"></script>
+</body>
+
+</html>
